@@ -2,18 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="22939173-1304-4f55-8e5d-86c8f5e306b2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/web/base/BaseController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/web/enums/ErrorCodeEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/rebel.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/web/configuration/MyInterceptorConfig.class" afterPath="$PROJECT_DIR$/target/classes/com/web/configuration/MyInterceptorConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/web/intercepter/LoginInterceptor.class" afterPath="$PROJECT_DIR$/target/classes/com/web/intercepter/LoginInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/web/user/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/com/web/user/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/web/utils/MD5Util.class" afterPath="$PROJECT_DIR$/target/classes/com/web/utils/MD5Util.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/Application.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/base/BaseController$ResponseResult.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/base/BaseController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/base/BaseService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/base/ProducerService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/configuration/DataSourcesConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/configuration/MyInterceptorConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/configuration/MybatisConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/configuration/RabbitMQConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/configuration/ViewConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/intercepter/LoginInterceptor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/listener/ConsumerListener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/user/controller/HelloController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/user/controller/JSPController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/user/controller/LoginController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/user/model/User.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/user/service/UserService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/utils/EmailUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/web/utils/MD5Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/druid-jdbc.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/druid-monitor.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/userMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/rabbitmq.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/rebel.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/web/configuration/MyInterceptorConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/web/configuration/MyInterceptorConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/web/intercepter/LoginInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/web/intercepter/LoginInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/web/user/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/com/web/user/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/web/utils/MD5Util.java" afterPath="$PROJECT_DIR$/src/main/java/com/web/utils/MD5Util.java" />
     </list>
     <ignored path="web.manage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginInterceptor.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LoginInterceptor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/web/intercepter/LoginInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
-              <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
+              <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,11 +103,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ErrorCodeEnum.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="368">
+                <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErrorCodeEnum.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/web/enums/ErrorCodeEnum.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="299">
+              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding>
                 <element signature="e#349#350#0" expanded="true" />
                 <element signature="e#376#377#0" expanded="true" />
@@ -167,7 +195,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/web/listener/ConsumerListener.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/web/configuration/RabbitMQConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/web/base/ProducerService.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/web/utils/ResponseResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/web/base/BaseController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/web/utils/MD5Util.java" />
@@ -175,6 +202,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/web/user/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/web/enum/ErrorCodeEnum.kt" />
         <option value="$PROJECT_DIR$/src/main/java/com/web/enums/ErrorCodeEnum.java" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/java/com/web/intercepter/LoginInterceptor.java" />
       </list>
     </option>
@@ -249,84 +277,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web.manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web.manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web.manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="intercepter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -856,7 +806,7 @@
       <workItem from="1489542945416" duration="915000" />
       <workItem from="1489546315020" duration="2608000" />
       <workItem from="1490248588864" duration="4772000" />
-      <workItem from="1490253454438" duration="6842000" />
+      <workItem from="1490253454438" duration="7166000" />
     </task>
     <task id="LOCAL-00001" summary="add rabbitmq">
       <created>1489546959756</created>
@@ -869,7 +819,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27350000" />
+    <option name="totallyTimeSpent" value="27674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1076,16 +1026,6 @@
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="276">
-            <caret line="12" column="65" lean-forward="false" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -1320,16 +1260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/web/intercepter/LoginInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="41" column="38" lean-forward="true" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/web/user/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1344,8 +1274,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/web/enums/ErrorCodeEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="299">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
           <folding>
             <element signature="e#349#350#0" expanded="true" />
             <element signature="e#376#377#0" expanded="true" />
@@ -1355,6 +1285,27 @@
             <element signature="e#507#508#0" expanded="true" />
             <element signature="e#547#548#0" expanded="true" />
             <element signature="e#579#580#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="368">
+            <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/web/intercepter/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
