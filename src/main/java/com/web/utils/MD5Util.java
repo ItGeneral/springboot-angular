@@ -2,7 +2,6 @@ package com.web.utils;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import java.security.MessageDigest;
 
 /**
@@ -14,7 +13,7 @@ public class MD5Util {
 
     private static final Logger logger = LoggerFactory.getLogger(MD5Util.class);
 
-    private final static String privateKey = "";
+    private final static String privateKey = "918F5A480984156E5EA368A7F7ED93B5";
 
     /**
      * 加密算法

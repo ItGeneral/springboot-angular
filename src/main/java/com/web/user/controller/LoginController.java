@@ -66,7 +66,7 @@ public class LoginController extends BaseController{
     }
 
     public static void main(String[] args) {
-        System.out.println(MD5Util.getEncryptedString(""));
+        System.out.println(MD5Util.getEncryptedString("登录秘钥"));
     }
 
 }

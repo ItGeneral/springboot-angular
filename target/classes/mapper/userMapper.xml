@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.web.user.model.User">
+    <sql id="columns">
+        id,userName,password,realName,telephone,email,birthday,city,profession,eduSchool,bindEmail,createTime,updateTime,activeStatus
+    </sql>
+
+    <sql id="condition">
+        <trim prefix="where" prefixOverrides="AND">
+            <if test="userName != null and userName != ''">
+                AND userName = #{userName}
+            </if>
+            <if test="password != null and password != ''">
+                AND password = #{password}
+            </if>
+            <if test="realName != null and realName != ''">
+                AND realName = #{realName}
+            </if>
+            <if test="email != null and email != ''">
+                AND email = #{email}
+            </if>
+            <if test="birthday != null and birthday != ''">
+                AND birthday = #{birthday}
+            </if>
+            <if test="city != null and city != ''">
+                AND city = #{city}
+            </if>
+            <if test="profession != null and profession != ''">
+                AND profession = #{profession}
+            </if>
+            <if test="eduSchool != null and eduSchool != ''">
+                AND eduSchool = #{eduSchool}
+            </if>
+            <if test="bindEmail != null and bindEmail != ''">
+                AND bindEmail = #{bindEmail}
+            </if>
+            <if test="createTime != null and createTime != ''">
+                AND createTime = #{createTime}
+            </if>
+            <if test="activeStatus != null and activeStatus != ''">
+                AND activeStatus = #{activeStatus}
+            </if>
+            <if test="updateTime != null and updateTime != ''">
+                AND updateTime = #{updateTime}
+            </if>
+        </trim>
+    </sql>
+
+    <insert id="insertUser" parameterType="com.web.user.model.User">
+        INSERT  INTO USER (
+        <include refid="columns"/>
+        )VALUES (
+        <trim suffix=",">
+            #{userName}
+            #{password}
+            #{realName}
+            #{email}
+            #{birthday}
+            #{city}
+            #{profession}
+            #{eduSchool}
+            #{bindEmail}
+            now()
+            #{updateTime}
+            #{activeStatus}
+        </trim>
+        )
+    </insert>
+
+
+    <update id="updateByUserName" parameterType="com.web.user.model.User">
+        UPDATE USER SET
+        <trim suffix=",">
+            <if test="userName != null and userName != ''">
+                userName = #{userName}
+            </if>
+            <if test="password != null and password != ''">
+                password = #{password}
+            </if>
+            <if test="realName != null and realName != ''">
+                realName = #{realName}
+            </if>
+            <if test="email != null and email != ''">
+                email = #{email}
+            </if>
+            <if test="birthday != null and birthday != ''">
+                birthday = #{birthday}
+            </if>
+            <if test="city != null and city != ''">
+                city = #{city}
+            </if>
+            <if test="profession != null and profession != ''">
+                profession = #{profession}
+            </if>
+            <if test="eduSchool != null and eduSchool != ''">
+                eduSchool = #{eduSchool}
+            </if>
+            <if test="bindEmail != null and bindEmail != ''">
+                bindEmail = #{bindEmail}
+            </if>
+            <if test="activeStatus != null and activeStatus != ''">
+                activeStatus = #{activeStatus}
+            </if>
+            <if test="updateTime != null and updateTime != ''">
+                updateTime = #{updateTime}
+            </if>
+        </trim>
+        WHERE userName = #{userName}
+    </update>
+
+    <select id="queryUserList" parameterType="com.web.user.model.User" resultType="com.web.user.model.User">
+        SELECT <include refid="columns"/>
+        FROM USER
+        <include refid="condition"/>
+    </select>
+
+    <select id="queryUserByUserName" parameterType="java.lang.String" resultType="com.web.user.model.User">
+        SELECT <include refid="columns"/>
+        FROM USER
+        WHERE userName = #{userName}
+    </select>
+</mapper>
