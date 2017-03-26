@@ -32,6 +32,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //登录拦截、性能监控，只有返回true时，才会执行下面的postHandle方法
         User user = (User) request.getSession().getAttribute(userSession);
+        response.setHeader("Access-Control-Allow-Origin", "*");
         System.out.println("--------preHandle--------");
         return true;
     }
