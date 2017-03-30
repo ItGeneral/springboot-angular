@@ -5,7 +5,7 @@ package com.web.enums;
  * @Author SongJiuHua.
  * @description
  */
-public enum ErrorCodeEnum {
+public enum HttpCodeEnum {
 
     NO_PRIVILEGE(100, "无权限");
 
@@ -13,7 +13,7 @@ public enum ErrorCodeEnum {
 
     private String name;
 
-    ErrorCodeEnum(Integer code, String name){
+    HttpCodeEnum(Integer code, String name){
         this.code = code;
         this.name = name;
     }

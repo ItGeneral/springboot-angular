@@ -92,6 +92,22 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-amqp</artifactId>
     </dependency>
+
+    <dependency>
+      <groupId>com.squareup.okhttp</groupId>
+      <artifactId>okhttp</artifactId>
+      <version>2.4.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.qq.Sdk4J</groupId>
+      <artifactId>Sdk4J-jar</artifactId>
+      <version>1.0</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/Sdk4J.jar</systemPath>
+    </dependency>
+
+
   </dependencies>
   <build>
     <finalName>com.web.manage</finalName>

@@ -96,5 +96,16 @@
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.5" level="project" />
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.10" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.amqp:spring-amqp:1.6.2.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: com.squareup.okhttp:okhttp:2.4.0" level="project" />
+    <orderEntry type="library" name="Maven: com.squareup.okio:okio:1.4.0" level="project" />
+    <orderEntry type="module-library">
+      <library name="Maven: org.qq.Sdk4J:Sdk4J-jar:1.0">
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/src/main/webapp/WEB-INF/lib/Sdk4J.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>

@@ -57,6 +57,8 @@
           <element id="library" level="project" name="Maven: org.apache.httpcomponents:httpcore:4.4.5" />
           <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.10" />
           <element id="library" level="project" name="Maven: org.springframework.amqp:spring-amqp:1.6.2.RELEASE" />
+          <element id="library" level="project" name="Maven: com.squareup.okhttp:okhttp:2.4.0" />
+          <element id="library" level="project" name="Maven: com.squareup.okio:okio:1.4.0" />
         </element>
       </element>
       <element id="directory" name="META-INF">

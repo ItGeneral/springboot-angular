@@ -1,6 +1,6 @@
 package com.web.intercepter;
 
-import com.web.enums.ErrorCodeEnum;
+import com.web.enums.HttpCodeEnum;
 import com.web.utils.MD5Util;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
@@ -46,12 +46,12 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         String userId = (String) cookieMap.get("userId");
         String signal = (String) cookieMap.get("signal");
         if (StringUtils.isEmpty(userId) || StringUtils.isEmpty(signal)){
-            response.setStatus(ErrorCodeEnum.NO_PRIVILEGE.getCode());
+            response.setStatus(HttpCodeEnum.NO_PRIVILEGE.getCode());
             return false;
         }
         String newSignal = MD5Util.getEncryptedString(userId, "SHA-256");
         if (!newSignal.equals(signal)){
-            response.setStatus(ErrorCodeEnum.NO_PRIVILEGE.getCode());
+            response.setStatus(HttpCodeEnum.NO_PRIVILEGE.getCode());
             return false;
         }
         return true;

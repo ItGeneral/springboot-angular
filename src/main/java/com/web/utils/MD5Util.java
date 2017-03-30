@@ -12,9 +12,9 @@ import java.security.MessageDigest;
  */
 public class MD5Util {
 
-    private static final Logger logger = LoggerFactory.getLogger(MD5Util.class);
+    private final static Logger logger = LoggerFactory.getLogger(MD5Util.class);
 
-    private final static String privateKey = "";
+    private final static String PRIVATE_KEY = "918F5A480984156E5EA368A7F7ED93B5";
 
     /**
      * 加密算法
@@ -23,7 +23,7 @@ public class MD5Util {
      * @return
      */
     public static String getEncryptedString(String target, String algorithmType){
-        return getEncryptedString(target, algorithmType, privateKey);
+        return getEncryptedString(target, algorithmType, PRIVATE_KEY);
     }
 
     /**

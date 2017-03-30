@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -28,7 +27,7 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping(value = "/login")
 public class LoginController extends BaseController{
 
-    private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
+    private final static Logger logger = LoggerFactory.getLogger(LoginController.class);
 
     @Autowired
     private UserService userService;
@@ -65,10 +64,6 @@ public class LoginController extends BaseController{
     @RequestMapping(value = "register")
     public void register(@RequestBody User user){
 
-    }
-
-    public static void main(String[] args) {
-        System.out.println(MD5Util.getEncryptedString("zhangsan"));
     }
 
 }
