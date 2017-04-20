@@ -40,10 +40,7 @@ public class LoginController extends BaseController{
     @ResponseBody
     public ResponseEntity login(HttpServletRequest request, HttpServletResponse response, @RequestParam String userName, @RequestParam String password){
         try{
-            //User user = userService.queryUserByUserName(userName);
-            User user = new User();
-            user.setId(121L);
-            user.setPassword("01D7F40760960E7BD9443513F22AB9AF");
+            User user = userService.queryUserByUserName(userName);
             if (user == null){
                 return badRequest(HttpStatus.BAD_REQUEST).put("message", "用户名不存在").build();
             }
@@ -54,16 +51,19 @@ public class LoginController extends BaseController{
             //将userId和signal（签名）返回前端cookie中
             request.setAttribute("userId", user.getId().toString());
             request.setAttribute("signal", MD5Util.getEncryptedString(user.getId().toString(), "SHA-256"));
-
+            response.setHeader("userId", user.getId().toString());
+            response.setHeader("signal", MD5Util.getEncryptedString(user.getId().toString(), "SHA-256"));
+            return ok().put("message", "登录成功").build();
         }catch (Exception e){
             logger.error("登录异常", e);
+            return badRequest(HttpStatus.INTERNAL_SERVER_ERROR).put("message", "登录异常，请稍后重试").build();
         }
-        return ok().put("message", "登录成功").build();
     }
 
     @RequestMapping(value = "register")
-    public void register(@RequestBody User user){
-
+    public ResponseEntity register(@RequestBody User user){
+        userService.insertUser(user);
+        return ok().put("message", "注册成功").build();
     }
 
 }

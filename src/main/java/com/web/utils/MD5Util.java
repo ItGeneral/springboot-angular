@@ -65,7 +65,7 @@ public class MD5Util {
      * @return
      */
     private static String bytesToHex(byte[] bytes){
-        StringBuffer md5Str = new StringBuffer();
+        StringBuilder md5Str = new StringBuilder();
         int digital;
         for (int i = 0; i < bytes.length; i++){
             digital = bytes[i];

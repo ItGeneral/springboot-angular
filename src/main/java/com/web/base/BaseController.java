@@ -42,7 +42,7 @@ public class BaseController {
          * @return
          */
         public ResponseResult put(String key, Object value) {
-            if (map == null) map = new HashMap<String, Object>();
+            if (map == null) map = new HashMap<>();
             map.put(key, value);
             return this;
         }

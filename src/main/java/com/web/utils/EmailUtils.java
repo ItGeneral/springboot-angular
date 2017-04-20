@@ -46,16 +46,16 @@ public class EmailUtils {
     private String from;
     private String fromPwd;
     // 收件人
-    private Set<Address> tos = new HashSet<Address>();
-    private Set<Address> ccs = new HashSet<Address>();
-    private Set<Address> bccs = new HashSet<Address>();
+    private Set<Address> tos = new HashSet<>();
+    private Set<Address> ccs = new HashSet<>();
+    private Set<Address> bccs = new HashSet<>();
     // 主题
     private String subject;
     // 正文
     private String body;
     // 附件
-    private Set<String> attachmentPathList = new HashSet<String>();
-    private Map<String, InputStream> attachmentStreamMap = new HashMap<String, InputStream>();
+    private Set<String> attachmentPathList = new HashSet<>();
+    private Map<String, InputStream> attachmentStreamMap = new HashMap<>();
     // 发送日期
     private Date sendDate;
 

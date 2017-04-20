@@ -47,7 +47,7 @@
     </sql>
 
     <insert id="insertUser" parameterType="com.web.user.model.User">
-        INSERT  INTO USER (
+        INSERT  INTO user (
         <include refid="columns"/>
         )VALUES (
         <trim suffix=",">
@@ -69,7 +69,7 @@
 
 
     <update id="updateByUserName" parameterType="com.web.user.model.User">
-        UPDATE USER SET
+        UPDATE user SET
         <trim suffix=",">
             <if test="userName != null and userName != ''">
                 userName = #{userName}
@@ -110,13 +110,13 @@
 
     <select id="queryUserList" parameterType="com.web.user.model.User" resultType="com.web.user.model.User">
         SELECT <include refid="columns"/>
-        FROM USER
+        FROM user
         <include refid="condition"/>
     </select>
 
     <select id="queryUserByUserName" parameterType="java.lang.String" resultType="com.web.user.model.User">
         SELECT <include refid="columns"/>
-        FROM USER
+        FROM user
         WHERE userName = #{userName}
     </select>
 </mapper>

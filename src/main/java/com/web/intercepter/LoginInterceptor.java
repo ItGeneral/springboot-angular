@@ -40,8 +40,10 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         //登录拦截、性能监控，只有返回true时，才会执行下面的postHandle方法
         Cookie[] cookies = request.getCookies();
         Map cookieMap = new HashMap();
-        for (Cookie cookie : cookies){
-            cookieMap.put(cookie.getName(), cookie.getValue());
+        if (cookies.length > 0){
+            for (Cookie cookie : cookies){
+                cookieMap.put(cookie.getName(), cookie.getValue());
+            }
         }
         String userId = (String) cookieMap.get("userId");
         String signal = (String) cookieMap.get("signal");
