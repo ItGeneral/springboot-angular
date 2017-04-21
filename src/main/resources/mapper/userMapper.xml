@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.web.user.model.User">
+<mapper namespace="com.web.business.user.model.User">
     <sql id="columns">
         id,userName,password,realName,telephone,email,birthday,city,profession,eduSchool,bindEmail,createTime,updateTime,activeStatus
     </sql>
@@ -46,7 +46,7 @@
         </trim>
     </sql>
 
-    <insert id="insertUser" parameterType="com.web.user.model.User">
+    <insert id="insertUser" parameterType="com.web.business.user.model.User">
         INSERT  INTO user (
         <include refid="columns"/>
         )VALUES (
@@ -68,7 +68,7 @@
     </insert>
 
 
-    <update id="updateByUserName" parameterType="com.web.user.model.User">
+    <update id="updateByUserName" parameterType="com.web.business.user.model.User">
         UPDATE user SET
         <trim suffix=",">
             <if test="userName != null and userName != ''">
@@ -108,13 +108,13 @@
         WHERE userName = #{userName}
     </update>
 
-    <select id="queryUserList" parameterType="com.web.user.model.User" resultType="com.web.user.model.User">
+    <select id="queryUserList" parameterType="com.web.business.user.model.User" resultType="com.web.business.user.model.User">
         SELECT <include refid="columns"/>
         FROM user
         <include refid="condition"/>
     </select>
 
-    <select id="queryUserByUserName" parameterType="java.lang.String" resultType="com.web.user.model.User">
+    <select id="queryUserByUserName" parameterType="java.lang.String" resultType="com.web.business.user.model.User">
         SELECT <include refid="columns"/>
         FROM user
         WHERE userName = #{userName}

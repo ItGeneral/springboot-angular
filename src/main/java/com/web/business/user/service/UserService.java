@@ -1,7 +1,7 @@
-package com.web.user.service;
+package com.web.business.user.service;
 
 import com.web.base.BaseService;
-import com.web.user.model.User;
+import com.web.business.user.model.User;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

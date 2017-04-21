@@ -38,7 +38,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         //登录拦截、性能监控，只有返回true时，才会执行下面的postHandle方法
-        Cookie[] cookies = request.getCookies();
+        /*Cookie[] cookies = request.getCookies();
         Map cookieMap = new HashMap();
         if (cookies.length > 0){
             for (Cookie cookie : cookies){
@@ -55,7 +55,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
         if (!newSignal.equals(signal)){
             response.setStatus(HttpCodeEnum.NO_PRIVILEGE.getCode());
             return false;
-        }
+        }*/
         return true;
     }
 

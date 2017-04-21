@@ -1,8 +1,8 @@
-package com.web.user.controller;
+package com.web.business.user.controller;
 
 import com.web.base.BaseController;
-import com.web.user.model.User;
-import com.web.user.service.UserService;
+import com.web.business.user.model.User;
+import com.web.business.user.service.UserService;
 import com.web.utils.MD5Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

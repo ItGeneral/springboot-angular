@@ -1,4 +1,4 @@
-package com.web.user.service;
+package com.web.business.user.service;
 
 import com.qq.connect.api.OpenID;
 import com.qq.connect.javabeans.AccessToken;
