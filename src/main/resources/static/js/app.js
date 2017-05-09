@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/4/21.
  */
-var flashingBuy = angular.module('flashingBuyApp',['ngRoute', 'common.flashingBuy.httpService'])
+var flashingBuy = angular.module('flashingBuyApp',['ui.router', 'common.flashingBuy.httpService'])
     .config(function ($routeProvider, $locationProvider, $httpProvider) {
 
      $locationProvider.html5Mode(true);

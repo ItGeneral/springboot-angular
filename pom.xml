@@ -106,9 +106,8 @@
       <scope>system</scope>
       <systemPath>${project.basedir}/src/main/webapp/WEB-INF/lib/Sdk4J.jar</systemPath>
     </dependency>
-
-
   </dependencies>
+
   <build>
     <finalName>com.web.manage</finalName>
     <plugins>
@@ -117,5 +116,57 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
       </plugin>
     </plugins>
+
+    <!-- 加载配置资源 -->
+    <resources>
+      <!-- 不加载区分环境的配置资源 -->
+      <resource>
+        <directory>src/main/resources</directory>
+        <excludes>
+          <exclude>config/*</exclude>
+        </excludes>
+      </resource>
+
+      <!-- 加载特定环境的配置资源 -->
+      <resource>
+        <directory>src/main/resources</directory>
+        <includes>
+          <include>config/${profiles.active}/application-${profiles.active}.properties</include>
+          <include>application.properties</include>
+        </includes>
+        <filtering>true</filtering>
+      </resource>
+
+    </resources>
   </build>
+
+  <profiles>
+    <!-- 本地开发环境 -->
+    <profile>
+      <id>dev</id>
+      <properties>
+        <profiles.active>dev</profiles.active>
+      </properties>
+      <activation>
+        <!-- 设置默认激活这个配置 -->
+        <activeByDefault>true</activeByDefault>
+      </activation>
+    </profile>
+    <!-- 生产环境 -->
+    <profile>
+      <id>product</id>
+      <properties>
+        <profiles.active>product</profiles.active>
+      </properties>
+    </profile>
+
+    <!-- 测试环境 -->
+    <profile>
+      <id>test</id>
+      <properties>
+        <profiles.active>test</profiles.active>
+      </properties>
+    </profile>
+  </profiles>
+
 </project>

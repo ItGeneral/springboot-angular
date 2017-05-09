@@ -7,6 +7,8 @@ import com.web.utils.MD5Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.EnvironmentAware;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -25,7 +27,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 @RequestMapping(value = "/login")
-public class LoginController extends BaseController{
+public class LoginController extends BaseController implements EnvironmentAware{
 
     private final static Logger logger = LoggerFactory.getLogger(LoginController.class);
 
@@ -66,4 +68,8 @@ public class LoginController extends BaseController{
         return ok().put("message", "注册成功").build();
     }
 
+    @Override
+    public void setEnvironment(Environment environment) {
+        System.out.println(environment.getProperty("test.env"));
+    }
 }
