@@ -5,6 +5,7 @@ SpringBoot
 MYSQL  
 RabbitMQ   
 Mybatis  
+Angularjs 1.4.6  
 
 ## RabbitMQ:  
 1、安装请参考: https://mp.weixin.qq.com/s/esWbvloVmQuAoXhmFFGbOg   
