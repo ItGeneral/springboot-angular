@@ -5,7 +5,7 @@ SpringBoot
 MYSQL  
 RabbitMQ   
 Mybatis  
-Angularjs 1.4.6  
+AngularJs 1.4.6  
 
 ## RabbitMQ:  
 1、安装请参考: https://mp.weixin.qq.com/s/esWbvloVmQuAoXhmFFGbOg   
@@ -26,3 +26,8 @@ Angularjs 1.4.6
 4、在DataSourcesConfig.java中设置需要加载的配置文件:`@PropertySource(value = {"classpath:/config/${spring.profiles.active}/application-${spring.profiles.active}.properties", "classpath:druid-monitor.properties"})`  
   详情请参见代码  
 5、通过命令将项目部署到dev环境：`mvn clean package -Pdev`  
+
+## AngularJs 1.4.6整合  
+1、在index.jsp添加代码，引入angular相关的js(angular.min.js,angular-route.min.js)以及后续添加的所有js文件，添加`<base href="/">`以及`ng-view`  
+2、在app.js中定义路由相关路径，后续需要新增页面（路径），都需要在此文件中添加路由信息，以及定义相应的controller.js；涉及到全局的变量，也可以在此文件中定义  
+
