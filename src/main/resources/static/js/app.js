@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/4/21.
  */
-var flashingBuy = angular.module('flashingBuyApp',['ui.router', 'common.flashingBuy.httpService'])
+var flashingBuy = angular.module('flashingBuyApp',['common.flashingBuy.httpService','ngRoute'])
     .config(function ($routeProvider, $locationProvider, $httpProvider) {
 
      $locationProvider.html5Mode(true);
@@ -20,7 +20,7 @@ var flashingBuy = angular.module('flashingBuyApp',['ui.router', 'common.flashing
     });
 
     // http拦截
-    $httpProvider.responseInterceptors.push(function ($q) {
+    /*$httpProvider.responseInterceptors.push(function ($q) {
         return function (promise) {
             return promise.then(function (response) { // success
                 return response;
@@ -34,7 +34,7 @@ var flashingBuy = angular.module('flashingBuyApp',['ui.router', 'common.flashing
                 return $q.reject(response);
             });
         }
-    });
+    });*/
 }).run(function ($rootScope, httpService) {
     //设置页面标题
     $rootScope.$on('$routeChangeSuccess', function (event, current, previous) {
