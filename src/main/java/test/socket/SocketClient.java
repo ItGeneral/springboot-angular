@@ -17,7 +17,7 @@ public class SocketClient {
      * 先启动SocketService，然后在启动此方法，则可完成一次通信
      * @param args
      */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         String message = "client data";
         try {
             Socket socket = new Socket("127.0.0.1", 8080);
@@ -33,7 +33,6 @@ public class SocketClient {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-    }
+    }*/
 
 }

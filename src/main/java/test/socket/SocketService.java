@@ -18,7 +18,7 @@ public class SocketService {
      * socket 服务端
      * @param args
      */
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         try {
             ServerSocket server = new ServerSocket(8080);
             Socket socket = server.accept();
@@ -36,5 +36,5 @@ public class SocketService {
             e.printStackTrace();
         }
 
-    }
+    }*/
 }
