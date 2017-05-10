@@ -24,3 +24,4 @@ Mybatis
 3、在/src/main/resources/config目录下添加各个环境的配置文件application-${spring.profiles.active}.properties  
 4、在DataSourcesConfig.java中设置需要加载的配置文件:`@PropertySource(value = {"classpath:/config/${spring.profiles.active}/application-${spring.profiles.active}.properties", "classpath:druid-monitor.properties"})`  
   详情请参见代码  
+5、通过命令将项目部署到dev环境：`mvn clean package -Pdev`  
