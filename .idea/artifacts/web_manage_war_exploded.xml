@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="web.manage" />
+          <element id="module-output" name="springboot.angular" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: org.springframework.boot:spring-boot-starter-web:1.4.1.RELEASE" />
@@ -64,7 +64,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/com.web.manage/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="web.manage/web/Web" />
+      <element id="javaee-facet-resources" facet="springboot.angular/web/Web" />
     </root>
   </artifact>
 </component>
