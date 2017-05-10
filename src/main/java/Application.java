@@ -1,6 +1,7 @@
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
 
 @ComponentScan({"com.web"})
@@ -8,7 +9,12 @@ import org.springframework.context.annotation.ComponentScan;
 public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        //SpringApplication.run(Application.class, args);
+        ApplicationContext ctx = SpringApplication.run(Application.class, args);
+        String[] activeProfiles = ctx.getEnvironment().getActiveProfiles();
+        for (String profile : activeProfiles) {
+            System.out.println("Spring Boot 使用profile为:{" + profile + "}");
+        }
     }
 
 }

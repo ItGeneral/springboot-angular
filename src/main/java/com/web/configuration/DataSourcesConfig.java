@@ -17,7 +17,7 @@ import org.springframework.context.annotation.PropertySource;
  * @description druid数据源和监控配置
  */
 @Configuration
-@PropertySource(value = {"classpath:druid-jdbc.properties", "classpath:druid-monitor.properties"})
+@PropertySource(value = {"classpath:/config/${spring.profiles.active}/application-${spring.profiles.active}.properties", "classpath:druid-monitor.properties"})
 public class DataSourcesConfig {
 
     @Value("${druid.jdbc.driverClassName}")
