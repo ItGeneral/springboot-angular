@@ -19,7 +19,7 @@ Mybatis
 3、如果一样，则说明登陆了，如果不相同，则表示没有登录  
 
 ## profile设置环境配置  
-1、在pom文件中设置<profiles/>，并且在<build/>中设置资源加载配置<resources/>  
+1、在pom文件中设置`<profiles/>`，并且在<build/>中设置资源加载配置`<resources/> ` 
 2、在application.properties中添加配置`spring.profiles.active=@profiles.active@`  
 3、在/src/main/resources/config目录下添加各个环境的配置文件application-${spring.profiles.active}.properties  
 4、在DataSourcesConfig.java中设置需要加载的配置文件:`@PropertySource(value = {"classpath:/config/${spring.profiles.active}/application-${spring.profiles.active}.properties", "classpath:druid-monitor.properties"})`  
